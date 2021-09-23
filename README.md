@@ -25,7 +25,7 @@ Sumário (<a href="https://github.com/rafaelq80/spring_react/blob/main/ebooks/" 
 
 ## Ferramentas
 
-Requisitos de software (<a href="https://github.com/rafaelq80/spring_react/blob/main/sts/" target="_blank">Clique aqui</a>)
+Requisitos de software (<a href="https://github.com/rafaelq80/spring_react/blob/main/install/" target="_blank">Clique aqui</a>)
 
 # Referências sobre Spring
 
