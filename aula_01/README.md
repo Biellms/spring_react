@@ -1,20 +1,22 @@
 <h1>Criando o projeto no Spring Initializer</h1>
 
-
+<br />
 
 <h2>STS</h2>
 
-
+<br />
 
 1) No menu **File => New**, clique na opção **Spring Starter Project**
 
+<br />
+
 <div align="center"><img src="https://i.imgur.com/1eNgXjO.png" title="source: imgur.com" /></div>
 
-
+<br />
 
 <h2>Eclipse</h2>
 
-
+<br />
 
 1) Instale o **STS** no Eclipse através do **Eclipse Market Place**
 
@@ -28,19 +30,19 @@
 
 4. Clique em **Next** para continuar
 
-   
+ <br />  
 
 <h2>Configurações do Projeto</h2>
 
-
+<br />
 
 **Configurações**
 
-
+<br />
 
 <div align="center"><img src="https://i.imgur.com/v4CPbuf.png" title="source: imgur.com" /></div>
 
-
+<br />
 
 | Item             | Descrição                                                    |
 | ---------------- | ------------------------------------------------------------ |
@@ -55,15 +57,15 @@
 | **Description**  | Descrição do projeto                                         |
 | **Package**      | Estrutura do pacote inicial da aplicação (Group + Artifact). Exemplo: ***<u>br.org.generation.helloworld</u>*** |
 
-
+<br />
 
 **Dependências**
 
-
+<br />
 
 <div align="center"><img src="https://i.imgur.com/jeY8cYu.png" title="source: imgur.com" /></div>
 
-
+<br />
 
 **Spring Boot Version**: Versão do Spring (Não alterar)
 
