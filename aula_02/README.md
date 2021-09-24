@@ -1,17 +1,14 @@
 <h1>Projeto Blog Pessoal - Parte 01</h1>
 
+<br />
 
 <h2>Configurações do Projeto</h2>
 
-
-
-<h3>Configurações</h3>
-
-
+<br />
 
 <div align="center"><img src="https://i.imgur.com/KYQAYYY.png" title="source: imgur.com" /></div>
 
-
+<br /><br />
 
 | Item             | Descrição                                                    |
 | ---------------- | ------------------------------------------------------------ |
@@ -26,15 +23,18 @@
 | **Description**  | Descrição do projeto                                         |
 | **Package**      | Estrutura do pacote inicial da aplicação (Group + Artifact). Exemplo: ***<u>br.org.generation.helloworld</u>*** |
 
-
+<br /><br />
 
 <h3>Dependências</h3>
 
-
+<br />
 
 <div align="center"><img src="https://i.imgur.com/4YgPRdc.png" title="source: imgur.com" /></div>
 
+
 **Spring Boot Version**: Versão do Spring (Não alterar)
+
+<br />
 
 Neste projeto inserimos 5 dependências:
 
@@ -46,11 +46,11 @@ Neste projeto inserimos 5 dependências:
 
 Clique em **Finish** para concluir.
 
-
+<br />
 
 <h2>Versão do Java - pom.xml</h2>
 
-
+<br />
 
 Alterar a linha:
 
@@ -68,11 +68,11 @@ para:
 	</properties>
 ```
 
-
+<br />
 
 <h2>Configuração do Banco de Dados</h2>
 
-
+<br />
 
 Inserir as linhas abaixo no arquivo **application.properties**, localizado em **src/main/resources**.
 
@@ -91,11 +91,11 @@ spring.jackson.date-format=yyyy-MM-dd HH:mm:ss
 spring.jackson.time-zone=Brazil/East
 ```
 
-
+<br />
 
 <h2>Próximas Etapas...</h2>
 
-
+<br />
 
 
 - [x] Criação da Camada Model
