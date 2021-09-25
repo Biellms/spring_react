@@ -1,8 +1,12 @@
-<h1>Projeto Blog Pessoal - Parte 01</h1>
+<h1>Projeto Blog Pessoal (CRUD) - Parte 01</h1>
 
 <br />
 
-<h2>Configurações do Projeto</h2>
+<h2>Passo 01 - Setup do Projeto</h2>
+
+<br />
+
+<h3>Configurações iniciais</h3>
 
 <br />
 
@@ -21,7 +25,7 @@
 | **Artifact**     | O artefato a ser gerado, ou seja, o nome da aplicação que será criada (Mesmo nome do projeto) |
 | **Version**      | Versão da API (não alterar)                                  |
 | **Description**  | Descrição do projeto                                         |
-| **Package**      | Estrutura do pacote inicial da aplicação (Group + Artifact). Exemplo: ***<u>br.org.generation.helloworld</u>*** |
+| **Package**      | Estrutura do pacote inicial da aplicação (Group + Artifact). Exemplo: ***<u>br.org.generation.blogpessoal</u>*** |
 
 <br /><br />
 
@@ -29,30 +33,47 @@
 
 <br />
 
+No projeto Blog Pessoal vamos inserir 5 dependências, conforme mostra a figura abaixo:
+
+<br />
+
 <div align="center"><img src="https://i.imgur.com/4YgPRdc.png" title="source: imgur.com" /></div>
 
 
-**Spring Boot Version**: Versão do Spring (Não alterar)
 
 <br />
 
-Neste projeto inserimos 5 dependências:
 
-1. ***Spring Web***
-2. ***Spring Boot Dev Tools***
-3. ***Validation***
-4. ***Spring Data JPA***
-5. ***MySQL Driver***
 
-Clique em **Finish** para concluir.
-
-<br />
-
-<h2>Versão do Java - pom.xml</h2>
+| Item                      | Descrição                                                    |
+| ------------------------- | ------------------------------------------------------------ |
+| **Spring Web**            | Fornece todas as Bibliotecas necessárias para trabalhar com o protocolo http. |
+| **Spring Boot Dev Tools** | Permite a atualização do projeto em tempo real durante o processo de Desenvolvimento da aplicação. |
+| **Validation**            | Fornece um conjunto de anotações que permite validar os atributos das Classes da Camada Model. |
+| **Spring Data JPA**       | Java Persistence API é uma biblioteca que armazena e recupera objetos que são armazenados em bancos de dados. |
+| **MySQL Driver**          | Responsável pela conexão entre nossa API e o Banco de Dados MySQL. |
 
 <br />
 
-Alterar a linha:
+Clique no botão **Finish** para concluir.
+
+<br />
+
+<div align="center"> <h2>*** IMPORTANTE ***</h2></div>
+
+Caso o projeto apresente algum erro no arquivo pom.xml, utilize o <b><a  href="https://github.com/rafaelq80/spring_react/blob/main/ebooks/erro_pom-xml.pdf" target="_blank">Guia de correção do arquivo pom.xml</a></b> para corrigir o problema.
+
+<br />
+
+<h2>Passo 02 - Ajuste da versão do Java (17 para 16) - arquivo pom.xml</h2>
+
+<br />
+
+**Caso você tenha configurado o seu projeto com a versão 11 do Java, ignore este passo.**
+
+Em Setembro de 2021 foi lançada a mais nova versão do Java (versão 17). Como a versão atual do STS ainda não possui o suporte à esta nova versão, faremos um ajuste para utilizar a versão anterior do Java (versão 16).
+
+Vamos Alterar a linha abaixo no arquivo pom.xml:
 
 ```xml
 	<properties>
@@ -70,7 +91,24 @@ para:
 
 <br />
 
-<h2>Configuração do Banco de Dados</h2>
+Na sequência, vamos atualizar o nosso projeto:
+
+1) Clique com o botão direito do mouse sobre a pasta do projeto, selecione a opção <b>Maven</b> e clique no item <b>Update Project...</b>
+
+<div align="center"><img src="https://i.imgur.com/ZLAyNgI.png" title="source: imgur.com" /></div>
+
+
+
+2) Na próxima janela, marque a opção **Force Update os Snapshots/Releases** e clique no botão **OK** para concluir.
+
+
+
+<div align="center"><img src="https://i.imgur.com/vg09z95.png" title="source: imgur.com" /></div>
+
+<br />
+
+
+<h2>Passo 03 - Configuração do Banco de Dados</h2>
 
 <br />
 
@@ -93,16 +131,52 @@ spring.jackson.time-zone=Brazil/East
 
 <br />
 
-<h2>Próximas Etapas...</h2>
+| Item                                        | Descrição                                                    |
+| ------------------------------------------- | ------------------------------------------------------------ |
+| **spring.jpa.hibernate.ddl-auto**           | Define como o JPA irá gerenciar o Banco de dados: **Update** ⇨ atualiza a estrutura do banco de dados, exceto remover atributos ou tabelas, e mantém os dados persistidos. |
+| **spring.jpa.database**                     | Define o Banco de dados que será utilizado (MySQL)           |
+| **spring.datasource.url**                   | Define o nome do Banco (db_blogpessoal), a criação automática do banco de dados no MySQL (caso não exista), o fuso horario do servidor MySQL e desabilita a camada de segurança da conexão com o MySQL (SSl) |
+| **spring.datasource.username**              | Define o usuário do MySQL                                    |
+| **spring.datasource.password**              | Define a senha do usuário do MySQL                           |
+| **spring.jpa.show-sql**                     | Exibe todas as Queries SQL no Console do STS                 |
+| **spring.jpa.properties.hibernate.dialect** | Configura a versão do MySQL, em nosso projeto versão 8.      |
+| **spring.jackson.date-format**              | Configura o formato da Data e da Hora da aplicação           |
+| **spring.jackson.time-zone**                | Configura o fuso horario da aplicação                        |
+
+<br />
+
+<div align="center"> <h2>*** IMPORTANTE ***</h2></div>
+
+Caso a senha do seu MySQL não seja **root**, atualize a linha: **spring.datasource.password** inserindo a senha que você cadastrou no seu MySQL durante a instalação. 
+
+Caso você tenha esquecido a senha do seu usuário root do MySQL, acesse o <b> <a href="https://github.com/rafaelq80/MySQL/blob/main/aula_01/desinstalacao_mysql.pdf" target="_blank">Guia de desinstalação do MySQL</a> </b> e siga as instruções.
+
+<br />
+
+<h2>Passo 04 - Próximas Etapas...</h2>
 
 <br />
 
 
 - [x] Criação da Camada Model
-  - [x] Classe Postagem
+  - [x] Implementação da Classe Postagem
 - [x] Criação da Camada Repository
-  - [x] Interface PostagemRepository
+  - [x] Implementação da  Interface PostagemRepository
 - [x] Criação da Camada Controller
-  - [x] Classe PostagemController 
-    - [x] Método getAll()
+  - [x] Implementação da  Classe PostagemController 
+    - [x] Implementação do Método getAll()
+
+
+
+<h2>Referências para consulta</h2>
+
+
+
+<a href="https://spring.io/" target="_blank">Documentação Oficial do Spring</a>
+
+<a href="https://maven.apache.org/" target="_blank">Documentação Oficial do Maven</a>
+
+<a href="https://mvnrepository.com/" target="_blank">Repositório do Maven</a>
+
+<a href="https://blog.algaworks.com/injecao-de-dependencias-spring/" target="_blank">Injeção de Dependências</a>
 
