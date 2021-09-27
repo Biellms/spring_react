@@ -11,6 +11,6 @@
 <br /><br />
 
 1. Erro no arquivo POM.xml: (<a href="https://github.com/rafaelq80/spring_react/blob/main/ebooks/erro_pom-xml.pdf">Clique aqui</a>)
-
 2. Guia do JPA: (<a href="https://github.com/rafaelq80/spring_react/blob/main/ebooks/guia_jpa.pdf">Clique aqui</a>)
+3. Guia Básico do Postman: (<a href="https://github.com/rafaelq80/spring_react/blob/main/ebooks/postman_review.pdf">Clique aqui</a>)
 
