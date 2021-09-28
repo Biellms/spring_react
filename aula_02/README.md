@@ -61,7 +61,7 @@ Clique no botão **Finish** para concluir.
 
 <div align="center"> <h2>*** IMPORTANTE ***</h2></div>
 
-Caso o projeto apresente algum erro no arquivo pom.xml, utilize o <b><a  href="https://github.com/rafaelq80/spring_react/blob/main/ebooks/erro_pom-xml.pdf" target="_blank">Guia de correção do arquivo pom.xml</a></b> para corrigir o problema.
+Caso o projeto apresente algum erro no arquivo pom.xml, utilize o <b>Guia de correção do arquivo pom.xml</b> para corrigir o problema.
 
 <br />
 
@@ -149,7 +149,7 @@ spring.jackson.time-zone=Brazil/East
 
 Caso a senha do seu MySQL não seja **root**, atualize a linha: **spring.datasource.password** inserindo a senha que você cadastrou no seu MySQL durante a instalação. 
 
-Caso você tenha esquecido a senha do seu usuário root do MySQL, acesse o <b> <a href="https://github.com/rafaelq80/MySQL/blob/main/aula_01/desinstalacao_mysql.pdf" target="_blank">Guia de desinstalação do MySQL</a> </b> e siga as instruções.
+Caso você tenha esquecido a senha do seu usuário root do MySQL, consulte o <b>Guia de desinstalação do MySQL </b> e siga as instruções.
 
 <br />
 
@@ -159,12 +159,8 @@ Caso você tenha esquecido a senha do seu usuário root do MySQL, acesse o <b> <
 
 
 - [x] Criação da Camada Model
-  - [x] Implementação da Classe Postagem
 - [x] Criação da Camada Repository
-  - [x] Implementação da  Interface PostagemRepository
 - [x] Criação da Camada Controller
-  - [x] Implementação da  Classe PostagemController 
-    - [x] Implementação do Método getAll()
 
 
 

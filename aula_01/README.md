@@ -69,7 +69,7 @@ Clique no botão **Finish** para concluir.
 
 <div align="center"> <h2>*** IMPORTANTE ***</h2></div>
 
-Caso o projeto apresente algum erro no arquivo pom.xml, utilize o <b><a  href="https://github.com/rafaelq80/spring_react/blob/main/ebooks/erro_pom-xml.pdf" target="_blank">Guia de correção do arquivo pom.xml</a></b> para corrigir o problema.
+Caso o projeto apresente algum erro no arquivo pom.xml, utilize o <b>Guia de correção do arquivo pom.xml</b> para corrigir o problema.
 
 <br />
 

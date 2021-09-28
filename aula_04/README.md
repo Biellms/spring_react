@@ -1,4 +1,4 @@
-<h1>Projeto Blog Pessoal (CRUD) - Parte 02</h1>
+<h1>Projeto Blog Pessoal (CRUD) - Parte 03</h1>
 
 <br />
 
@@ -19,8 +19,10 @@
 <br />
 
 
+- [x] Atualização da Camada Model
 - [x] Atualização da Camada Repository
 - [x] Atualização da Camada Controller
+- [x] Criação do Relacionamento entre as Classes
 
 
 

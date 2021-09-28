@@ -2,10 +2,6 @@
 
 <br />
 
-Aulas sobre Spring - Generation Brasil
-
-<br />
-
 <div align="center">
     <img src="https://i.imgur.com/w8tTOuT.png" title="source: imgur.com" /> 
     <strong>trilha</strong>
@@ -18,31 +14,19 @@ Aulas sobre Spring - Generation Brasil
 
 <br />
 
-Aula 01 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_01/" target="_blank">Clique aqui</a>) - Hello World! + Exercícios Spring (Hello BSM's e Hello Objetivos)
+Aula 01 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_01/" target="_blank">Clique aqui</a>) - Hello World! + Exercícios
 
 <br />
 
-Aula 02 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_02/" target="_blank">Clique aqui</a>) - Blog Pessoal - CRUD Postagens - Configuração do projeto, Dependências, Banco de dados, Model, Repository e Controller (método findAll)
+Aula 02 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_02/" target="_blank">Clique aqui</a>) - Blog Pessoal - CRUD Postagens - Parte 01
 
 <br />
 
-Aula 03 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_03/" target="_blank">Clique aqui</a>) - Blog Pessoal - CRUD Postagens - Repository (Método findAllByTituloContainingIgnoreCase) e Controller (métodos: findById, finfByTitulo, postPostagem, putPostagem e deletePostagem)
+Aula 03 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_03/" target="_blank">Clique aqui</a>) - Blog Pessoal - CRUD Postagens - Parte 02
 
 <br />
 
-## Ebooks
-
-<br />
-
-Sumário (<a href="https://github.com/rafaelq80/spring_react/blob/main/ebooks/" target="_blank">Clique aqui</a>)
-
-<br />
-
-## Ferramentas
-
-<br />
-
-Requisitos de software (<a href="https://github.com/rafaelq80/spring_react/blob/main/install/" target="_blank">Clique aqui</a>)
+Aula 04 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_04/" target="_blank">Clique aqui</a>) - Blog Pessoal - CRUD Postagens - Parte 03
 
 <br />
 
