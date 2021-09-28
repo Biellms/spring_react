@@ -26,7 +26,7 @@ Aula 03 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_03/" 
 
 <br />
 
-Aula 04 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_04/" target="_blank">Clique aqui</a>) - Blog Pessoal - CRUD Postagens - Parte 03
+Aula 04 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_04/" target="_blank">Clique aqui</a>) - Blog Pessoal - CRUD Temas e Relacionamentos
 
 <br />
 
