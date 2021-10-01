@@ -30,6 +30,10 @@ Aula 04 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_04/" 
 
 <br />
 
+Aula 05 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_05/" target="_blank">Clique aqui</a>) - Loja de Games - CRUD completo
+
+<br />
+
 # Referências sobre Spring
 
 <br />
