@@ -158,9 +158,9 @@ Caso você tenha esquecido a senha do seu usuário root do MySQL, consulte o <b>
 <br />
 
 
-- [x] Criação da Camada Model
-- [x] Criação da Camada Repository
-- [x] Criação da Camada Controller
+- [x] Criar a Camada Model
+- [x] Criar a Camada Repository
+- [x] Criar a Camada Controller
 
 
 

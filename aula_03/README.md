@@ -5,12 +5,12 @@
 <h2>Etapas concluídas</h2>
 
 
-- [x] Criação do Projeto Spring
-- [x] Configuração das Dependências iniciais do Projeto
-- [x] Configuração do Banco de dados
-- [x] Criação da Camada Model
-- [x] Criação da Camada Repository
-- [x] Criação da Camada Controller
+- [x] Criar o Projeto Spring
+- [x] Configurar as Dependências do Projeto
+- [x] Configurar o Banco de dados
+- [x] Criar a Camada Model
+- [x] Criar a Camada Repository
+- [x] Criar a Camada Controller
 
 <br />
 
@@ -19,8 +19,8 @@
 <br />
 
 
-- [x] Atualização da Camada Repository
-- [x] Atualização da Camada Controller
+- [x] Atualizar a Camada Repository
+- [x] Atualizar a Camada Controller
 
 
 
