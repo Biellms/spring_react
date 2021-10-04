@@ -12,7 +12,7 @@
 
      **seu usuario = Usuário do seu computador*
 
-3. Importe o projeto para o Eclipse/STS ( **File => Open Projects from File System...**)
+3. Importe o projeto para o Eclipse/STS ( **File ⇨ Open Projects from File System...**)
 
 4. Na janela **Import Projects from File System or Archive**, clique no botão **Directory** para localizar a pasta Workspace
 

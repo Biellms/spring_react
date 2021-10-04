@@ -23,7 +23,7 @@
 
 <br />
 
-<div align="center"><img src="https://i.imgur.com/v4CPbuf.png" title="source: imgur.com" /></div>
+<div align="center"><img src="https://i.imgur.com/47zc9js.png" title="source: imgur.com" /></div>
 
 <br />
 
@@ -32,7 +32,7 @@
 | **Name**         | Nome do Projeto (Geralmente em letras minúsculas)            |
 | **Type**         | Define o Gerenciador de Dependências (Maven)                 |
 | **Packaging**    | Define como a aplicação será empacotada (JAR)                |
-| **Java Version** | Versão do Java                                               |
+| **Java Version** | Versão do Java (a versão da imagem pode ser diferente da sua tela) |
 | **Language**     | Linguagem (Java)                                             |
 | **Group**        | O domínio reverso de sua empresa ou organização. **Exemplo:** *generation.org.br* => ***br.org.generation*** |
 | **Artifact**     | O artefato a ser gerado, ou seja, o nome da aplicação que será criada (Mesmo nome do projeto) |
@@ -54,7 +54,7 @@ Neste projeto vamos inserir 3 dependências, conforme mostra a figura abaixo:
 
 <br />
 
-| Item                      | Descrição                                                    |
+| Dependência               | Descrição                                                    |
 | ------------------------- | ------------------------------------------------------------ |
 | **Spring Web**            | Fornece todas as Bibliotecas necessárias para trabalhar com o protocolo http. |
 | **Spring Boot Dev Tools** | Permite a atualização do projeto em tempo real durante o processo de Desenvolvimento da aplicação. |

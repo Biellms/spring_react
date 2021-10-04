@@ -20,7 +20,7 @@
 
 
 - [x] Atualizar a Camada Model
-- [x] Atualiza a Camada Repository
+- [x] Atualizar a Camada Repository
 - [x] Atualizar a Camada Controller
 - [x] Criar o Relacionamento entre as 2 Classes
 

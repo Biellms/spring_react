@@ -34,6 +34,10 @@ Aula 05 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_05/" 
 
 <br />
 
+Aula 06 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_06/" target="_blank">Clique aqui</a>) - Farmácia - CRUD completo
+
+<br />
+
 # Referências sobre Spring
 
 <br />
