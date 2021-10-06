@@ -38,6 +38,10 @@ Aula 06 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_06/" 
 
 <br />
 
+Aula 07 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_07/" target="_blank">Clique aqui</a>) - Blog Pessoal - Spring Security Basic
+
+<br />
+
 # Referências sobre Spring
 
 <br />
