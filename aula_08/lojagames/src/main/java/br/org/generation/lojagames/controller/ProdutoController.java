@@ -1,5 +1,6 @@
 package br.org.generation.lojagames.controller;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,5 +58,19 @@ public class ProdutoController {
 		produtoRepository.deleteById(id);		
 	}
 
+	// Consulta pelo preço maior do que o preço digitado emm ordem crescente
+	
+	@GetMapping("/preco_maior/{preco}")
+	public ResponseEntity<List<Produto>> getPrecoMaiorQue(@PathVariable BigDecimal preco){ 
+		return ResponseEntity.ok(produtoRepository.findByPrecoGreaterThanOrderByPreco(preco));
+	}
+	
+	// Consulta pelo preço menor do que o preço digitado em ordem decrescente
+	
+	@GetMapping("/preco_menor/{preco}")
+	public ResponseEntity<List<Produto>> getPrecoMenorQue(@PathVariable BigDecimal preco){ 
+		return ResponseEntity.ok(produtoRepository.findByPrecoLessThanOrderByPrecoDesc(preco));
+	}
+	
 }
 
