@@ -42,6 +42,10 @@ Aula 07 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_07/" 
 
 <br />
 
+Aula 08 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_08/" target="_blank">Clique aqui</a>) - Loja de Games - Spring Security Basic
+
+<br />
+
 # Referências sobre Spring
 
 <br />
