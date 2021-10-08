@@ -15,7 +15,6 @@ Nesta atividade iremos implementar os testes nas Camadas Model, Repository e Con
 7. <a href="#ctr">Crie a Classe de testes na Camada Controller: UsuarioControllerTest</a>
 8. <a href="#run">Execute os testes</a>
 9. <a href="#ref">Referências</a>
-10. <a href="https://github.com/rafaelq80/spring_react/blob/main/aula_09/h2.md">Banco de Dados H2</a>
 
 
 
