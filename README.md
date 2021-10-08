@@ -46,6 +46,10 @@ Aula 08 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_08/" 
 
 <br />
 
+Aula 09 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_09/" target="_blank">Clique aqui</a>) - Blog Pessoal - Spring Test
+
+<br />
+
 # Referências sobre Spring
 
 <br />
