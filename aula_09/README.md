@@ -423,8 +423,6 @@ package br.org.generation.blogpessoal.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.text.ParseException;
-
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.MethodOrderer;
@@ -459,7 +457,7 @@ public class UsuarioControllerTest {
 	private UsuarioRepository usuarioRepository;
 	
 	@BeforeAll
-	public void start() throws ParseException {
+	public void start() {
 
 		usuarioAdmin = new Usuario(0L, "Administrador", "admin@email.com.br", "admin123");
 
