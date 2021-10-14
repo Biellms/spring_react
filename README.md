@@ -54,6 +54,14 @@ Aula 10 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_10/" 
 
 <br />
 
+Aula 11 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_11/" target="_blank">Clique aqui</a>) -  Blog Pessoal - Documentação com o Swagger
+
+<br />
+
+Aula 12 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_12/" target="_blank">Clique aqui</a>) -  Blog Pessoal - Deploy
+
+<br />
+
 # Referências sobre Spring
 
 <br />
