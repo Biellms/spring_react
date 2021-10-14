@@ -50,6 +50,10 @@ Aula 09 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_09/" 
 
 <br />
 
+Aula 10 (<a href="https://github.com/rafaelq80/spring_react/blob/main/aula_10/" target="_blank">Clique aqui</a>) - Loja de Games - Spring Test
+
+<br />
+
 # Referências sobre Spring
 
 <br />
