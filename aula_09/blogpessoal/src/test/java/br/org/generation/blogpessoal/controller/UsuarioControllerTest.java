@@ -36,7 +36,7 @@ public class UsuarioControllerTest {
 	private UsuarioRepository usuarioRepository;
 	
 	@BeforeAll
-	public void start()  {
+	public void start() {
 
 		usuarioAdmin = new Usuario(0L, "Administrador", "admin@email.com.br", "admin123");
 
