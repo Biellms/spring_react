@@ -24,7 +24,7 @@ public interface ProdutoRepository extends JpaRepository<Produto, Long>{
 	 *  Método Personalizado - Buscar todos os Produtos cujo o preço seja menor 
 	 *  do que um valor digitado ordenado pelo preço em ordem decrescente
 	 *  
-	 *  MySQL: select * from tb_produtos where preco < preco order by preco;
+	 *  MySQL: select * from tb_produtos where preco < preco order by preco desc;
 	 */
 	 
 	public List <Produto> findByPrecoLessThanOrderByPrecoDesc(BigDecimal preco);
