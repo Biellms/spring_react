@@ -273,7 +273,7 @@ spring.jackson.time-zone=Brazil/East
 
 <div align="center"> <h1>*** Importante ***</h1></div>
 
-<div align="justify">A partir deste ponto, <b>o seu projeto não executará mais localmente (http://localhost:8080/)</b>. Para voltar a executar localmente, será necessário <b>desfazer as configurações efetuadas no arquivo application.properties</b>.  
+<div align="justify">A partir deste ponto, <b>o seu projeto não executará mais localmente (http://localhost:8080/)</b>. Para voltar a executar localmente, será necessário <b>desfazer as configurações efetuadas no arquivo application.properties (Passo 10)</b>.  
 </div>
 
 
