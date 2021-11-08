@@ -9,7 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotBlank;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -22,7 +22,11 @@ public class Categoria {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@NotNull(message="Categoria é obrigatório!")
+	/**
+	 * A anotação @NotBlank é utilizada para validar se o campo não está vazio, 
+	 * logo ela não permite nulo ou vazio.
+	 */
+	@NotBlank(message="Categoria é obrigatório!")
 	private String categoria;
 	
 	private String descricao;

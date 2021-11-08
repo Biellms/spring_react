@@ -2,6 +2,8 @@ package br.org.generation.farmacia.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,37 +26,49 @@ import br.org.generation.farmacia.repository.CategoriaRepository;
 public class CategoriaController {
 	
 	@Autowired
-	private CategoriaRepository repository;
+	private CategoriaRepository categoriaRepository;
 	
 	@GetMapping
 	public ResponseEntity<List <Categoria>> getAll(){
-		return ResponseEntity.ok(repository.findAll());
+		return ResponseEntity.ok(categoriaRepository.findAll());
 	}
 	
 	@GetMapping("/{id}") 
 	public ResponseEntity<Categoria> getById(@PathVariable long id){
-		return repository.findById(id)
+		return categoriaRepository.findById(id)
 			.map(resp -> ResponseEntity.ok(resp))
 			.orElse(ResponseEntity.notFound().build());	
 	}
 	
 	@GetMapping("/categoria/{categoria}")
 	public ResponseEntity<List<Categoria>> getByName(@PathVariable String categoria){
-		return ResponseEntity.ok(repository.findAllByCategoriaContainingIgnoreCase(categoria));
+		return ResponseEntity.ok(categoriaRepository.findAllByCategoriaContainingIgnoreCase(categoria));
 	}
 	
 	@PostMapping
 	public ResponseEntity<Categoria> postCategoria(@RequestBody Categoria tipo){
-		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(tipo));	
+		return ResponseEntity.status(HttpStatus.CREATED).body(categoriaRepository.save(tipo));	
 	}
 	
 	@PutMapping
-	public ResponseEntity<Categoria> putCategoria(@RequestBody Categoria tipo){
-		return ResponseEntity.ok(repository.save(tipo));
+	public ResponseEntity<Categoria> putCategoria(@Valid @RequestBody Categoria categoria) {
+					
+		return categoriaRepository.findById(categoria.getId())
+				.map(resposta -> {
+					return ResponseEntity.ok().body(categoriaRepository.save(categoria));
+				})
+				.orElse(ResponseEntity.notFound().build());
+
 	}
-	
+
 	@DeleteMapping("/{id}")
-	public void deleteCategoria(@PathVariable long id){
-		repository.deleteById(id);
+	public ResponseEntity<?> deleteCategoria(@PathVariable long id) {
+		
+		return categoriaRepository.findById(id)
+				.map(resposta -> {
+					categoriaRepository.deleteById(id);
+					return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+				})
+				.orElse(ResponseEntity.notFound().build());
 	}
 }

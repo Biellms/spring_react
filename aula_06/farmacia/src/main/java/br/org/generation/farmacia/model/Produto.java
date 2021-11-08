@@ -8,9 +8,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
@@ -21,16 +23,26 @@ public class Produto {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@NotNull(message="Nome é obrigatório!")
+	/**
+	 * A anotação @NotBlank é utilizada para validar se o campo não está vazio, 
+	 * logo ela não permite nulo ou vazio.
+	 */
+	@NotBlank(message="Nome é obrigatório!")
 	private String nome;
 	
-	@NotNull(message="Descrição é obrigatório!")
+	@NotBlank(message="Descrição é obrigatório!")
 	private String descricao;
 
 	private int quantidade;
 
 	private String laboratorio;
 	
+	/**
+	 * A anotação @JsonFormat(shape = JsonFormat.Shape.STRING) é utilizada 
+	 * para formatar o valor do preço do produto como uma String. Desta forma,
+	 * conseguiremos visualizar a parte decimal do preço mesmo sendo 00.
+	 */
+	@JsonFormat(shape = JsonFormat.Shape.STRING)
 	@NotNull(message="Preço é obrigatório!")
 	@Positive(message = "Digite um valor maior do que zero")
 	private BigDecimal preco;

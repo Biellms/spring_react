@@ -1,6 +1,9 @@
 package br.org.generation.farmacia.controller;
 
+import java.math.BigDecimal;
 import java.util.List;
+
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -49,15 +52,25 @@ public class ProdutoController {
 	}
 	
 	@PutMapping
-	public ResponseEntity<Produto> putProduto(@RequestBody Produto produto){ 
-		return ResponseEntity.status(HttpStatus.OK).body(produtoRepository.save(produto)); 
+	public ResponseEntity<Produto> putProduto(@Valid @RequestBody Produto produto) {
+					
+		return produtoRepository.findById(produto.getId())
+				.map(resposta -> {
+					return ResponseEntity.ok().body(produtoRepository.save(produto));
+				})
+				.orElse(ResponseEntity.notFound().build());
+
 	}
-	
+
 	@DeleteMapping("/{id}")
-	public void deleteProduto(@PathVariable long id) {
+	public ResponseEntity<?> deleteProduto(@PathVariable long id) {
 		
-		produtoRepository.deleteById(id);
-		
+		return produtoRepository.findById(id)
+				.map(resposta -> {
+					produtoRepository.deleteById(id);
+					return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+				})
+				.orElse(ResponseEntity.notFound().build());
 	}
 	
 	// Consulta por nome ou laboratório
@@ -73,5 +86,12 @@ public class ProdutoController {
 	public ResponseEntity<List<Produto>> getByNomeELaboratorio(@PathVariable String nome, @PathVariable String laboratorio){
 		return ResponseEntity.ok(produtoRepository.findByNomeAndLaboratorio(nome, laboratorio));
 	}
-		
+	
+	// Consulta por preço entre dois valores (Between)
+	
+	@GetMapping("/preco_inicial/{inicio}/preco_final/{fim}")
+	public ResponseEntity<List<Produto>> getByPrecoEntre(@PathVariable BigDecimal inicio, @PathVariable BigDecimal fim){
+		return ResponseEntity.ok(produtoRepository.buscarProdutosEntre(inicio, fim));
+	}
+
 }
