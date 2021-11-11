@@ -78,9 +78,9 @@ public class UsuarioService {
 
 	}
 
-	private String gerarBasicToken(String email, String password) {
-		
-		String tokenBase = email + ":" + password;
+	private String gerarBasicToken(String usuario, String senha) {
+
+		String tokenBase = usuario + ":" + senha;
 		byte[] tokenBase64 = Base64.encodeBase64(tokenBase.getBytes(Charset.forName("US-ASCII")));
 		return "Basic " + new String(tokenBase64);
 
