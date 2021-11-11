@@ -33,6 +33,13 @@ public class UsuarioService {
 
 		if (usuarioRepository.findById(usuario.getId()).isPresent()) {
 			
+			Optional<Usuario> buscaUsuario = usuarioRepository.findByUsuario(usuario.getUsuario());
+
+			if (buscaUsuario.isPresent()) {				
+				if (buscaUsuario.get().getId() != usuario.getId())
+					return Optional.empty();
+			}
+			
 			usuario.setSenha(criptografarSenha(usuario.getSenha()));
 
 			return Optional.of(usuarioRepository.save(usuario));
