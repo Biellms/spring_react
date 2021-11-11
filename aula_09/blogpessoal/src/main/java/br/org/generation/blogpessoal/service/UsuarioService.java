@@ -32,12 +32,6 @@ public class UsuarioService {
 	public Optional<Usuario> atualizarUsuario(Usuario usuario) {
 
 		if (usuarioRepository.findById(usuario.getId()).isPresent()) {
-			Optional<Usuario> buscaUsuario = usuarioRepository.findByUsuario(usuario.getUsuario());
-
-			if (buscaUsuario.isPresent()) {				
-				if (buscaUsuario.get().getId() != usuario.getId())
-					return Optional.empty();
-			}
 			
 			usuario.setSenha(criptografarSenha(usuario.getSenha()));
 
@@ -54,21 +48,18 @@ public class UsuarioService {
 		if (usuario.isPresent()) {
 			if (compararSenhas(usuarioLogin.get().getSenha(), usuario.get().getSenha())) {
 
-				String auth = usuarioLogin.get().getUsuario() + ":" + usuarioLogin.get().getSenha();
-				byte[] encodedAuth = Base64.encodeBase64(auth.getBytes(Charset.forName("US-ASCII")));
-				String authHeader = "Basic " + new String(encodedAuth);
-
-				usuarioLogin.get().setId(usuario.get().getId());
+				usuarioLogin.get().setId(usuario.get().getId());				
 				usuarioLogin.get().setNome(usuario.get().getNome());
 				usuarioLogin.get().setSenha(usuario.get().getSenha());
-				usuarioLogin.get().setToken(authHeader);
+				usuarioLogin.get().setToken(gerarBasicToken(usuarioLogin.get().getUsuario(), usuarioLogin.get().getSenha()));
 
 				return usuarioLogin;
 
 			}
-		}
+		}	
 		
 		return Optional.empty();
+		
 	}
 
 	private String criptografarSenha(String senha) {
@@ -76,13 +67,23 @@ public class UsuarioService {
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 		
 		return encoder.encode(senha);
+
 	}
 	
 	private boolean compararSenhas(String senhaDigitada, String senhaBanco) {
 		
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 		
-		return encoder.matches(senhaDigitada, senhaBanco);		
+		return encoder.matches(senhaDigitada, senhaBanco);
+
+	}
+
+	private String gerarBasicToken(String email, String password) {
+		
+		String tokenBase = email + ":" + password;
+		byte[] tokenBase64 = Base64.encodeBase64(tokenBase.getBytes(Charset.forName("US-ASCII")));
+		return "Basic " + new String(tokenBase64);
+
 	}
 
 }
