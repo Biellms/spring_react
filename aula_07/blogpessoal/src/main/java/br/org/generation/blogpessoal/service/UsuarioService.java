@@ -61,8 +61,8 @@ public class UsuarioService {
 			return Optional.of(usuarioRepository.save(usuario));
 		} 
 			
-		throw new ResponseStatusException(
-					HttpStatus.NOT_FOUND, "Usuário não encontrado!", null);
+		return Optional.empty();
+
 	}	
 
 	public Optional<UsuarioLogin> autenticarUsuario(Optional<UsuarioLogin> usuarioLogin) {
@@ -84,8 +84,7 @@ public class UsuarioService {
 			}
 		}	
 		
-		throw new ResponseStatusException(
-				HttpStatus.UNAUTHORIZED, "Usuário ou senha inválidos!", null);
+		return Optional.empty();
 		
 	}
 
