@@ -7,7 +7,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
@@ -18,7 +17,7 @@ public class Usuario {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 
-	@NotNull(message = "O atributo Nome é Obrigatório!")
+	@NotBlank(message = "O atributo Nome é Obrigatório!")
 	private String nome;
 
 	@NotBlank(message = "O atributo Usuário é Obrigatório!")
@@ -28,7 +27,7 @@ public class Usuario {
 	@NotBlank(message = "O atributo Senha é Obrigatório!")
 	@Size(min = 8, message = "A Senha deve ter no mínimo 8 caracteres")
 	private String senha;
-
+	
 	public long getId() {
 		return id;
 	}
@@ -60,5 +59,5 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-
+	
 }
